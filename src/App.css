@@ -1,0 +1,68 @@
+.app {
+  width: 540px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 80px auto;
+  padding: 20px 40px;
+}
+
+form input {
+  width: 80%;
+  height: 40px;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #ddd;
+}
+button {
+  width: 15%;
+  height: 36px;
+  border: none;
+  background-color: #59b547;
+  color: white;
+  border-radius: 4px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4a9c40;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.todo:last-child {
+  border-bottom: none;
+}
+.todo .todo-text {
+  display: flex;
+  align-items: center;
+}
+.todo .todo-text [type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+[type="checkbox"]:checked {
+  background-color: #59b547;
+}
+label {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #9f9f9f;
+}
+
+.delete {
+  cursor: pointer;
+}
