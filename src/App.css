@@ -54,9 +54,10 @@ button:hover {
 }
 label {
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: semi-bold;
   letter-spacing: 1px;
   font-size: 17px;
+  color: #171717;
 }
 [type="checkbox"]:checked + label {
   text-decoration: line-through;
